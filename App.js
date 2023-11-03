@@ -1,10 +1,10 @@
 import React from "react";
-import { StatusBar } from "react-native";
+import { StatusBar, Text } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Home from "./screens/home";
-import FunctionalComponent from "./screens/functional_component";
-import ClassComponent from "./screens/class_component";
+import FunctionalComponent from "./screens/functional_components";
+import ClassComponent from "./screens/class_components";
 import News from "./screens/news";
 import NewsDetail from "./screens/news_detail";
 
@@ -21,6 +21,10 @@ const App = () => {
 
   return (
     <NavigationContainer>
+      <Text style={{textAlign: "center", fontWeight: "bold", fontSize: 24}}>
+        Moch. Andi Divangga Pratama {"\n"}
+        1203210005
+      </Text>
       <StatusBar style="auto" backgroundColor="#AA0002" />
       <Stack.Navigator>
         <Stack.Screen
